@@ -268,6 +268,12 @@ public class NavigationViewController: UIViewController {
         }
     }
     
+    @objc public var stepView: StepsViewController? {
+        get {
+            return mapViewController?.stepsViewController
+        }
+    }
+    
     /**
      Determines whether the user location annotation is moved from the raw user location reported by the device to the nearest location along the route.
      
