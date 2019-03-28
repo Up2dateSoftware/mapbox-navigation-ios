@@ -889,7 +889,6 @@ extension RouteMapViewController {
         
 //        let opts = UIViewAnimationOptions(curve: options.curve)
 //        UIView.animate(withDuration: options.duration, delay: 0, options: opts, animations: view.layoutIfNeeded, completion: nil)
-        view.layoutIfNeeded
     }
     
     @objc fileprivate func keyboardWillHide(notification: NSNotification) {
@@ -901,7 +900,6 @@ extension RouteMapViewController {
         navigationView.endOfRouteShowConstraint?.constant = 0
 
 //        UIView.animate(withDuration: options.duration, delay: 0, options: options.curve, animations: view.layoutIfNeeded, completion: nil)
-        view.layoutIfNeeded
     }
 }
 
