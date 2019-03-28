@@ -876,9 +876,9 @@ extension RouteMapViewController {
     }
     @objc fileprivate func keyboardWillShow(notification: NSNotification) {
         guard let userInfo = notification.userInfo else { return }
-        let curve = UIViewAnimationCurve(rawValue: userInfo[UIKeyboardAnimationCurveUserInfoKey] as! Int)
-        let options = (duration: userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double,
-                       curve: curve!)
+//        let curve = UIViewAnimationCurve(rawValue: userInfo[UIKeyboardAnimationCurveUserInfoKey] as! Int)
+//        let options = (duration: userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double,
+//                       curve: curve!)
         let keyboardHeight = (userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect).size.height
 
         if #available(iOS 11.0, *) {
@@ -887,19 +887,21 @@ extension RouteMapViewController {
             navigationView.endOfRouteShowConstraint?.constant = -1 * keyboardHeight
         }
         
-        let opts = UIViewAnimationOptions(curve: options.curve)
-        UIView.animate(withDuration: options.duration, delay: 0, options: opts, animations: view.layoutIfNeeded, completion: nil)
+//        let opts = UIViewAnimationOptions(curve: options.curve)
+//        UIView.animate(withDuration: options.duration, delay: 0, options: opts, animations: view.layoutIfNeeded, completion: nil)
+        view.layoutIfNeeded
     }
     
     @objc fileprivate func keyboardWillHide(notification: NSNotification) {
         guard let userInfo = notification.userInfo else { return }
-        let curve = UIViewAnimationCurve(rawValue: userInfo[UIKeyboardAnimationCurveUserInfoKey] as! Int)
-        let options = (duration: userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double,
-                       curve: UIViewAnimationOptions(curve: curve!))
+//        let curve = UIViewAnimationCurve(rawValue: userInfo[UIKeyboardAnimationCurveUserInfoKey] as! Int)
+//        let options = (duration: userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double,
+//                       curve: UIViewAnimationOptions(curve: curve!))
         
         navigationView.endOfRouteShowConstraint?.constant = 0
 
-        UIView.animate(withDuration: options.duration, delay: 0, options: options.curve, animations: view.layoutIfNeeded, completion: nil)
+//        UIView.animate(withDuration: options.duration, delay: 0, options: options.curve, animations: view.layoutIfNeeded, completion: nil)
+        view.layoutIfNeeded
     }
 }
 
