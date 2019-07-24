@@ -57,6 +57,7 @@ public class NavigationSettings: NSObject {
         return properties.filter({ (child) -> Bool in
             if let label = child.label {
                 return label != "properties.storage" && label != "$__lazy_storage_$_properties"
+                
             }
             return false
         })
