@@ -930,7 +930,7 @@ extension RouteMapViewController {
 //        let opts = UIViewAnimationOptions(curve: options.curve)
 //        UIView.animate(withDuration: options.duration, delay: 0, options: opts, animations: view.layoutIfNeeded, completion: nil)
         
-        view.layoutIfNeeded
+        view.layoutIfNeeded()
         
     }
     

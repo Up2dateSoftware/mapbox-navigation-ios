@@ -87,7 +87,7 @@ open class NavigationMapView: MGLMapView, UIGestureRecognizerDelegate {
     var altitude: CLLocationDistance = defaultAltitude
     var routes: [Route]?
     
-    fileprivate var preferredFramesPerSecond: Int = 60 {
+    open var preferredFramesPerSecond: Int = 60 {
         didSet {
             if #available(iOS 10.0, *) {
                 displayLink?.preferredFramesPerSecond = preferredFramesPerSecond
