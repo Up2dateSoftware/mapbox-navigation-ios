@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1235A88222E8B0B9003C6312 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235A88122E8B0B9003C6312 /* MapboxDirections.framework */; };
-		1235A88322E8B0B9003C6312 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235A88122E8B0B9003C6312 /* MapboxDirections.framework */; };
-		1235A88422E8B0B9003C6312 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235A88122E8B0B9003C6312 /* MapboxDirections.framework */; };
+		1235A89722E99353003C6312 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235A89622E99353003C6312 /* MapboxDirections.framework */; };
+		1235A89822E99353003C6312 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1235A89622E99353003C6312 /* MapboxDirections.framework */; };
 		160D8279205996DA00D278D6 /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D8278205996DA00D278D6 /* DataCache.swift */; };
 		160D827B2059973C00D278D6 /* DataCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D827A2059973C00D278D6 /* DataCacheTests.swift */; };
 		166224452025699600EA4824 /* ImageRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166224442025699600EA4824 /* ImageRepositoryTests.swift */; };
@@ -390,7 +389,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1235A88122E8B0B9003C6312 /* MapboxDirections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxDirections.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeSafe_Driver-ecblzvwvxrgaarbqlewhfqjsgtbu/Build/Products/Debug-iphoneos/MapboxDirections.swift/MapboxDirections.framework"; sourceTree = "<group>"; };
+		1235A89622E99353003C6312 /* MapboxDirections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxDirections.framework; path = Carthage/Build/iOS/MapboxDirections.framework; sourceTree = "<group>"; };
 		160D8278205996DA00D278D6 /* DataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCache.swift; sourceTree = "<group>"; };
 		160D827A2059973C00D278D6 /* DataCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCacheTests.swift; sourceTree = "<group>"; };
 		166224442025699600EA4824 /* ImageRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositoryTests.swift; sourceTree = "<group>"; };
@@ -697,7 +696,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1235A88422E8B0B9003C6312 /* MapboxDirections.framework in Frameworks */,
 				354A01BF1E6625D100D765C2 /* Mapbox.framework in Frameworks */,
 				35CC14161F7994B1009E872A /* Turf.framework in Frameworks */,
 			);
@@ -737,7 +735,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1235A88222E8B0B9003C6312 /* MapboxDirections.framework in Frameworks */,
+				1235A89722E99353003C6312 /* MapboxDirections.framework in Frameworks */,
 				35E9B0AD1F9E0F8F00BF84AB /* MapboxNavigation.framework in Frameworks */,
 				354A01CF1E66266100D765C2 /* MapboxDirections.framework in Frameworks */,
 				C57607B11F4CC9E800C27423 /* Solar.framework in Frameworks */,
@@ -770,7 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5EA98721F19414C00C8AA16 /* MapboxMobileEvents.framework in Frameworks */,
-				1235A88322E8B0B9003C6312 /* MapboxDirections.framework in Frameworks */,
+				1235A89822E99353003C6312 /* MapboxDirections.framework in Frameworks */,
 				359D00CF1E732D7100C2E770 /* Polyline.framework in Frameworks */,
 				35CC14151F7994B0009E872A /* Turf.framework in Frameworks */,
 			);
@@ -1014,7 +1012,7 @@
 		A9E2B43473B53369153F54C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1235A88122E8B0B9003C6312 /* MapboxDirections.framework */,
+				1235A89622E99353003C6312 /* MapboxDirections.framework */,
 				C5A9DDBD202E12EE007D52DA /* MapboxSpeech.framework */,
 				35CC14141F799496009E872A /* Turf.framework */,
 				C57607B01F4CC97D00C27423 /* Solar.framework */,
