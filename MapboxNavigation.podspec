@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source = { :git => "https://github.com/Up2dateSoftware/mapbox-navigation-ios.git", :tag => "v#{s.version.to_s}" }
+  s.source = { :git => "https://github.com/Up2dateSoftware/mapbox-navigation-ios.git", :branch => 'doc-release' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "MapboxNavigation"
 
-  s.dependency "MapboxCoreNavigation", "#{s.version.to_s}"
+  s.dependency "MapboxCoreNavigation", :branch => 'doc-release'
   s.dependency "Mapbox-iOS-SDK", "~> 3.6"
   s.dependency "Solar", "~> 2.1"
   s.dependency "MapboxSpeech", "~> 0.0.1"
